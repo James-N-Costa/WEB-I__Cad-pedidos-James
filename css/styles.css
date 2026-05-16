@@ -1,0 +1,11 @@
+ b{
+                display: block;
+                color: rgb(1, 12, 1);
+                padding: 15px 20px;
+                border: 1.0px solid;
+                border-color: black;
+                border-radius: 8px;
+                background-color: aliceblue;
+                text-align: center;
+                
+            }
