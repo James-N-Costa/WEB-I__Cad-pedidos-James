@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Pedidos</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    input, button {
+      padding: 8px;
+      margin: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Pedidos - Loja de Limpeza</h2>
+
+  <input type="text" id="cliente" placeholder="Cliente">
+  <input type="text" id="produto" placeholder="Produto">
+  <input type="number" id="quantidade" placeholder="Quantidade">
+
+  <button onclick="adicionarPedido()">
+    Adicionar
+  </button>
+
+  <table>
+    <tr>
+      <th>Cliente</th>
+      <th>Produto</th>
+      <th>Quantidade</th>
+      <th>Ações</th>
+    </tr>
+
+    <tbody id="listaPedidos"></tbody>
+  </table>
+
+  <script>
+    function adicionarPedido() {
+
+      let cliente = document.getElementById("cliente").value;
+      let produto = document.getElementById("produto").value;
+      let quantidade = document.getElementById("quantidade").value;
+
+      let tabela = document.getElementById("listaPedidos");
+
+      tabela.innerHTML += `
+        <tr>
+          <td>${cliente}</td>
+          <td>${produto}</td>
+          <td>${quantidade}</td>
+        </tr>
+      `;
+
+      // limpar campos
+      document.getElementById("cliente").value = "";
+      document.getElementById("produto").value = "";
+      document.getElementById("quantidade").value = "";
+    }
+  </script>
+
+</body>
+</html>
