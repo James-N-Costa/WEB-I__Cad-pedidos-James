@@ -3,19 +3,28 @@
     <head>
         <title> Home</title>
     <style>
-        body{background-color: rgb(193, 243, 206); 
+        body{background-color: rgb(85, 189, 230); 
             font-family: Georgia, 'Times New Roman', Times, serif; }  
+        
+        b{
+            display:block; height: 15px; width: 800px; 
+            margin-left: auto; margin-right:auto;
+            font-weight: bold;
+            color: rgb(1, 12, 1);
+            padding: 10px 10px;
+            border: 1.0px solid;
+            border-color: black;
+            border-radius: 10px;
+            background-color: rgb(215, 232, 247);
+            text-align: center;   }
 
         img{align-items: center; border-radius: 80px;      }
 
-        ul{    list-style-type:none;
-                margin: none;  padding: none;
-                background-color: rgb(193, 243, 206); }
-
-        b a {float: right}
-        b a button{
+        ul {float: right}
+        ul button{
             display:block;
-                color: black; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;
+                color: black; font-family: Georgia, 'Times New Roman', Times, serif; 
+                font-weight: bold; font-size: 18px;
                 text-align: end right;
                 padding: 15px 20px;
                 text-decoration: none;
@@ -23,15 +32,18 @@
                 border-radius: 8px;        }
         button:hover{ background-color: #ddd;  }
       
-        input{
-                display: block;
-                color: rgb(1, 12, 1);
-                padding: 10px 15px;
-                border: 1.0px solid;
-                border-color: black;
-                border-radius: 10px;
-                background-color: aliceblue;
-                text-align: center;       }    
+        p a button{float:center}
+        p a button{
+            display: block; height: 80px; width:200px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: rgb(1, 12, 1);
+            padding: 15px 20px;
+            border: 1.0px solid;
+            border-color: black;
+            border-radius: 10px;
+            background-color: aliceblue;
+            text-align: center;       }    
 
      </style>
                     
@@ -42,24 +54,30 @@
             <img src="imagens/logo-sapo-limpo.png" />
             
             
-            <p> <b>CADASTROS </b> </p>
-            <p> Cadastro de Produtos</p>
-            <p> Cadastro de Clientes</p> 
+        </br> <b>CADASTROS </b> 
+            <p> <a href="cadastro-de-clientes.html">
+                <button type="button">Cadastro de clientes</button></a>  </p>
 
-            <p> 
-            <b><a href="cadastro-de-pedidos.html"> </b>
-                <button type="button">  Cadastro de Pedidos </button>
-            </a>            </p> 
+            <p> <a href="cadastro-de-produtos.html">
+                <button type="button">Cadastro de Produtos</button></a>  </p> 
+             
+            <p><a href="cadastro-de-pedidos.html"> 
+                <button type="button">  Cadastro de Pedidos </button></a></p>
+            </br> 
             
-            <br>
-            <P> <b> LISTAGEM </b> </P>
+            
+            <br/> <b> LISTAGEM </b> 
             <P> Lista de Produtos</P>
             <p> Lista de Clientes</p>
-            <P> Lista de Pedidos</P>            </br>
 
-            <br> 
-            <b><a href="login.html">
-                <button type="button">  Sair </button> </a> </br></b>
+            <p><a href="lis-ped_3.html"> 
+                <button type="button">  Listagem de Pedidos  </button></a></p> 
+            <br/>           
+                         
+            <ul>
+                <a href="login.html">
+                    <button type="button">  Sair </button> </a> 
+            
 
 
         </center> 

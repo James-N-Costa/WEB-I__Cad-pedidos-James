@@ -4,41 +4,71 @@
                 <title>Cadastro de Pedidos</title>
 
             <style>
-            ul{
-                list-style-type:none;
-                margin: 0;  padding: 0;
-                background-color: #f1f1f1;   }
+                ul{
+                    list-style-type:none;
+                    margin: 0;  padding: 0;
+                    background-color: #f1f1f1;   }
 
-             img{align-items: center; border-radius: 80px;  
-            margin-left: auto;   }
+                img{float:center}
+                img{align-items: center; border-radius: 80px;  
+                margin-left: auto;   }
 
-            li{  float:right; }
-            li a{
-                display:block;
-                color: black;
-                text-align: center;
-                padding: 12px 14px;
-                text-decoration: none;
-                background-color: #b4ecc0;
-                border-radius: 8px;
-                }
-            a:hover{ background-color: #ddd;  }
+                li{  float:right; }
+                li a{
+                    display:block;
+                    color: black;
+                    text-align: center;
+                    padding: 12px 14px;
+                    text-decoration: none;
+                    background-color: #94eea7;
+                    border-radius: 10px;   }
+                a:hover{ background-color: #ddd;  }
 
-
-            body{background-color: rgb(203, 245, 214); font-family: Georgia, 'Times New Roman', Times, serif; }
-              
-            b{
-                display:block; height: 15px; width: 400px; 
-                margin-left: auto; margin-right:auto;
-                color: rgb(1, 12, 1);
-                padding: 10px 10px;
-                border: 1.0px solid;
-                border-color: black;
-                border-radius: 10px;
-                background-color: aliceblue;
-                text-align: center;
+                body{background-color: rgb(85, 189, 230); font-family: Georgia, 'Times New Roman', Times, serif; }
                 
-            }
+                
+                input{                
+                    display:inline-block; border-radius: 12px;
+                    padding: 10px 10px; height: 10px;
+                    background-color: rgb(163, 240, 183)
+                }
+
+
+                b{
+                    display:block; height: 15px; width: 800px; 
+                    margin-left: auto; margin-right:auto;
+                    color: rgb(1, 12, 1);
+                    padding: 10px 10px;
+                    border: 1.0px solid;
+                    border-color: black;
+                    border-radius: 10px;
+                    background-color: aliceblue;
+                    text-align: center;   }
+
+                p a {float:right; }
+                p a button{
+                    display:block;
+                    font-family: Georgia, 'Times New Roman', Times, serif; 
+                    font-weight: bold; font-size: 16px;
+                        color: black;
+                        text-align: end right;
+                        padding: 10px 12px;
+                        text-decoration: none;
+                        background-color:rgb(37, 243, 116); 
+                        border-radius: 12px; border-color: rgb(4, 141, 22);       }
+                    button:hover{ background-color: #ddd;  }
+
+                button{float:inline-start}
+                button{ 
+                   display:block;                                                 
+                   font-family: Georgia, 'Times New Roman', Times, serif;
+                   font-weight: bold; font-size: 12px;
+                   color:black; background-color: rgb(65, 231, 65);
+                   border-radius: 10px; border-color: rgb(2, 78, 2);
+                   text-align: center; 
+                   padding: 10px 10px;         }
+                   button:hover{background-color: aquamarine;}
+            
 
             </style>
        
@@ -52,16 +82,16 @@
                 <li><a href="cadastro-de-produtos.html">Produtos</a></li>
                 <li><a href="tela-principal.html">Home</a></li>
             </ul>
-            <br/>
+            <p><br/>
             <center>
             <img src="imagens/logo-sapo-limpo.png" />
-            </center>
+            </center> </p>
               
             
-            <br />
+            <br>
             <b> INFORMAÇÕES DO PEDIDO </b> 
                 
-                <br />
+                <br/>
                     
                 <p>
                 <label>  Nº do Pedido: </label>
@@ -74,26 +104,19 @@
                     <input type="text"/> 
             </p>
 
-            <br />
+            <br>
             <b> INFORMAÇÕES DE ENTREGA </b>
             <br />
-            
-                <p>
-                <label>  </label>
-                    <!input type="text"/> 
-
-                <label> </label> 
-                  <!input type="text"/> 
-
+                           
                 <label> Cidade:</label> 
                   <input type="text"/> 
                 
                 <label> Bairro:</label> 
+                    <input type="text"/> 
+                
+                <label>  Rua: </label>
                     <input type="text"/> </p>
                 <p>
-                <label>  Rua: </label>
-                    <input type="text"/> 
-
                 <label> Número:</label> 
                   <input type="text"/> 
                 
@@ -116,15 +139,20 @@
 
                 <label> Unidade:</label> 
                     <input type="text"/> </p>
-                <button type="button"> Adicionar</button>
-                                        
-           
-          
-            <br/>
-                               
-          
-            <br/>
-            <a href="tela-principal.html"> Voltar</a>
+
+                <button type="button"> Adicionar</button>   
+                <a href="lis-ped_3.html"> 
+                    <button type="button"> Lista de Pedidos </button> </a>
+                 <p></p>  
+                                           
+                <p>
+                    <a href="tela-principal.html"> 
+                        <button type="button">  Voltar </button></a>
+                </p>  
+            <br/>   
+            <p>
+                
+            </p>     
 
 
 
